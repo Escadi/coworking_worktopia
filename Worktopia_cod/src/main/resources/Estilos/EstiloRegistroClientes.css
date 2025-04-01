@@ -1,0 +1,24 @@
+.vboxDatos{
+    -fx-background-color: #DDDEDE;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+.Botones{ /*Botones de Confirmar*/
+    -fx-background-color:  #4CAF50;
+    -fx-border-color: #FFA500FF;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+.Botones:hover{
+    -fx-background-color: #046107;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2 ;
+}
+
+.Botones:pressed{
+    -fx-background-color: #047f07;
+    -fx-scale-y: 1;
+    -fx-scale-x: 1;
+}
+

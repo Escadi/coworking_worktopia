@@ -1,0 +1,40 @@
+
+.vboxDatos{
+    -fx-background-color: #DDDEDE;
+    -fx-border-color: #FFA500FF;
+    -fx-border-width: 2;
+}
+
+.Botones { /*Botones de Confirmar*/
+    -fx-background-color:  #4CAF50;
+    -fx-border-color: #FFA500FF;
+    -fx-text-fill: transparent;
+    -fx-pref-width: 60px;
+    -fx-transition: -fx-pref-width 0.3s ease-in-out, -fx-text-fill 0.3s ease-in-out;
+}
+.Botones:hover {
+    -fx-opacity: 1;
+    -fx-background-color: #046107;
+    -fx-pref-width: 120px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+
+}
+.labels{
+    -fx-font-family: "Tahoma";
+}
+
+.btnSalir{
+    -fx-background-color:trasparent;
+}
+.btnSalir:hover{
+    -fx-background-color:trasparent;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}
+.btnSalir:pressed{
+    -fx-background-color:trasparent;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+}

@@ -1,0 +1,44 @@
+.AnchorPane{
+    -fx-background-color: #DDDEDE;
+}
+.BtnEntrar{
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: rgb(245, 242, 242);
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-border-color: orange;
+}
+
+.BtnEntrar:hover{
+    -fx-background-color:#046107;
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2 ;
+}
+.BtnEntrar:pressed{
+    -fx-background-color: #047f07;
+    -fx-scale-y: 1;
+    -fx-scale-x: 1;
+}
+.textfieldUsuario{
+    -fx-border-color: #000000;
+    -fx-border-width: 3px;
+}
+.textfielPassword{
+    -fx-border-color: #000000;
+    -fx-border-width: 3px;
+}
+.btnpassword{
+    -fx-background-color: Transparent;
+    -fx-text-fill: orange;
+}
+.btnpassword:hover{
+    -fx-text-fill: #bf7b16;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+.btnpassword:pressed{
+    -fx-text-fill: #efa32d;
+    -fx-scale-y: 1;
+    -fx-scale-x: 1;
+}
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="panel" prefHeight="830.0" prefWidth="1300.0" styleClass="AnchorPane" stylesheets="@../Estilos/EstilosMenuPrincipal.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modelos.MenuPrincipal">
+    <children>
+      <ImageView fx:id="imagenPrincipal" fitHeight="449.0" fitWidth="797.0" layoutX="252.0" layoutY="14.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../Imagenes/ImagenPrincipalLogin.png" />
+         </image>
+      </ImageView>
+        <Button id="BtnEntrar" fx:id="BtnEntrar" alignment="CENTER" defaultButton="true" layoutX="595.0" layoutY="618.0" onAction="#logeado" prefHeight="39.0" prefWidth="110.0" styleClass="BtnEntrar" stylesheets="@../Estilos/EstilosMenuPrincipal.css" text="ENTRAR" textAlignment="CENTER" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Button>
+        <PasswordField id="textfieldPassword" fx:id="password" alignment="TOP_CENTER" layoutX="527.0" layoutY="548.0" prefHeight="32.0" prefWidth="245.0" promptText="CONTRASEÑA" styleClass="textfielPassword" stylesheets="@../Estilos/EstilosMenuPrincipal.css">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </PasswordField>
+      <TextField id="textFieldUsuario" fx:id="usuario" alignment="TOP_CENTER" layoutX="527.0" layoutY="472.0" prefHeight="32.0" prefWidth="245.0" promptText="USUARIO" styleClass="textfieldUsuario" stylesheets="@../Estilos/EstilosMenuPrincipal.css" />
+
+      <Label layoutX="560.0" layoutY="715.0" text="Proyecto Worktopia Version 1.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="472.0" layoutY="740.0" text="Realizado por Eliú Manuel Viera Lorenzo y David Liaño Macias">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <Line endX="405.0" layoutX="645.0" layoutY="520.0" startX="-390.0" strokeWidth="2.0" />
+      <Line endX="392.0" layoutX="657.0" layoutY="595.0" startX="-401.0" strokeWidth="2.0" />
+      <Line endX="-104.0" layoutX="657.0" layoutY="723.0" startX="-400.0" strokeWidth="2.0" />
+      <Line endX="-2.0" layoutX="1049.0" layoutY="723.0" startX="-302.0" strokeWidth="2.0" />
+      <Button fx:id="btnOlvido" layoutX="507.0" layoutY="665.0" mnemonicParsing="false" onAction="#olvido" prefHeight="35.0" prefWidth="285.0" styleClass="btnpassword" stylesheets="@../Estilos/EstilosMenuPrincipal.css" text="¿Se te ha olvidado la contraseña?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

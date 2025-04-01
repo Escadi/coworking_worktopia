@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="460.0" maxWidth="305.0" prefHeight="450.0" prefWidth="297.0" style="-fx-background-color: #DDDEDE;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Modelos.RegistroClientes">
+    <children>
+      <VBox layoutY="2.0" prefHeight="472.0" prefWidth="299.0" spacing="3.0" styleClass="vboxDatos" stylesheets="@../Estilos/EstiloRegistroClientes.css">
+         <children>
+            <Button fx:id="btnSalir" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#salirVentana" styleClass="btnSalir" stylesheets="@../Estilos/EstiloVboxListas.css">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/borrar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="256.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+              <Label text="Registrar Nuevo Cliente">
+                  <font>
+                      <Font name="System Bold" size="22.0" />
+                  </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="DNI / NIF">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+              <TextField id="dni" fx:id="dni" alignment="CENTER" prefHeight="40.0" prefWidth="400.0" styleClass="textFieldRegistro" stylesheets="@../Estilos/EstiloRegistroClientes.css">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Nombre">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField id="nombre" fx:id="nombre" alignment="CENTER" prefHeight="40.0" prefWidth="400.0" styleClass="textFieldRegistro" stylesheets="@../Estilos/EstiloRegistroClientes.css">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin></TextField>
+            <Label layoutX="32.0" layoutY="126.0" text="Primer Apellido">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField id="primerApellido" fx:id="primerApellido" alignment="CENTER" prefHeight="40.0" prefWidth="400.0" styleClass="textFieldRegistro" stylesheets="@../Estilos/EstiloRegistroClientes.css">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin></TextField>
+            <Label text="Segundo Apellido">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField id="segundoApellido" fx:id="segundoApellido" alignment="CENTER" prefHeight="40.0" prefWidth="400.0" styleClass="textFieldRegistro" stylesheets="@../Estilos/EstiloRegistroClientes.css">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin></TextField>
+            <Label text="Email">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField id="eMail" fx:id="eMail" alignment="CENTER" prefHeight="40.0" prefWidth="400.0" styleClass="textFieldRegistro" stylesheets="@../Estilos/EstiloRegistroClientes.css">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin></TextField>
+            <Label text="Telefono Contacto">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField id="telefono" fx:id="telefono" alignment="CENTER" prefHeight="40.0" prefWidth="400.0" styleClass="textFieldRegistro" stylesheets="@../Estilos/EstiloRegistroClientes.css">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" right="20.0" />
+               </VBox.margin></TextField>
+              <Button id="btnConfirmar" fx:id="btnConfirmar" alignment="CENTER" onAction="#guardarCliente" prefHeight="39.0" prefWidth="110.0" styleClass="Botones" stylesheets="@../Estilos/EstiloRegistroClientes.css" text="Confirmar" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+                  <font>
+                      <Font name="System Bold" size="15.0" />
+                  </font>
+                  <cursor>
+                      <Cursor fx:constant="DEFAULT" />
+                  </cursor>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="90.0" />
+               </VBox.margin>
+              </Button>
+            <Button id="btnCancelar" fx:id="btnCancelar" alignment="CENTER" prefHeight="39.0" prefWidth="127.0" styleClass="Botones" stylesheets="@../Estilos/EstiloRegistroClientes.css" text="Limpiar Datos" textAlignment="CENTER" textFill="#fcfcfc" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="80.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+    </children>
+
+
+</AnchorPane>
